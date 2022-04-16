@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="screen">
+                <input type="text" name="" id="calScreen" placeholder="0">
+            </div>
+            <div class="cal-body">
+                <!-- row1 -->
+                <button onclick="ce()" data-key="46">CE</button>
+                <button onclick="put('%')">%</button>
+                <button onclick="back()" data-key="8">X</button>
+                <button onclick="put('/')">/</button>
+                <!-- row2 -->
+                <button onclick="put('7')" data-key="55">7</button>
+                <button onclick="put('8')" data-key="56">8</button>
+                <button onclick="put('9')" data-key="57">9</button>
+                <button onclick="put('*')">*</button>
+                <!-- row3 -->
+                <button onclick="put('4')" data-key="52">4</button>
+                <button onclick="put('5')" data-key="53">5</button>
+                <button onclick="put('6')" data-key="54">6</button>
+                <button onclick="put('-')">-</button>
+                <!-- row4 -->
+                <button onclick="put('1')" data-key="49">1</button>
+                <button onclick="put('2')" data-key="50">2</button>
+                <button onclick="put('3')" data-key="51">3</button>
+                <button onclick="put('+')">+</button>
+                <!-- row5 -->
+                <button onclick="put('00')">00</button>
+                <button onclick="put('0')" data-key="48">0</button>
+                <button onclick="put('.')" data-key="190">.</button>
+                <button onclick="equal()" data-key="187">=</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
